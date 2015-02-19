@@ -45,11 +45,11 @@ public class DrawPlot {
    }
 }
 
-class DrawFrame extends JFrame {
+class DrawFrame2 extends JFrame {
     
    private final int HEIGHT = 400;
     
-   public DrawFrame(double[] data) {
+   public DrawFrame2(double[] data) {
 
       setTitle("Hi!");
       setSize(data.length, HEIGHT);
@@ -60,12 +60,12 @@ class DrawFrame extends JFrame {
 }
 
 
-class DrawComponent extends JComponent {
+class DrawComponent2 extends JComponent {
    
     double[] data;
     int height;
     
-   public DrawComponent(double[] data, int height) {
+   public DrawComponent2(double[] data, int height) {
         this.data = data;
         this.height = height;
     }

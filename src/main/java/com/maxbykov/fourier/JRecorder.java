@@ -11,7 +11,7 @@ import javax.sound.sampled.AudioFileFormat.Type;
 public class JRecorder extends Thread {
 
     private TargetDataLine        m_line;
-    private AudioFileFormat.Type    m_targetType;
+    private Type    m_targetType;
     private AudioInputStream    m_audioInputStream;
     private File            m_outputFile;
 
@@ -60,7 +60,7 @@ public class JRecorder extends Thread {
             System.exit(1);
         }
 
-        AudioFileFormat.Type    targetType = AudioFileFormat.Type.WAVE;
+        Type    targetType = Type.WAVE;
         JRecorder j = new JRecorder(targetDataLine,targetType,outputFile);
 
         System.out.println("Press ENTER to start the recording.");
