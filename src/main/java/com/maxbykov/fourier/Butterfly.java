@@ -95,7 +95,7 @@ public class Butterfly {
         
         Complex[] spectrum = Butterfly.DecimationInFrequency(signal, true);
         Utils.normalize(spectrum);
-        DrawTest.drawSpectrum(Utils.magnitude(spectrum));
+        //DrawTest.drawSpectrum(Utils.magnitude(spectrum));
         
     }
 }

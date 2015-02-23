@@ -17,7 +17,7 @@ public class Utils {
             Complex x = data[i];
             double Re = x.getReal();
             double Im = x.getImaginary();
-            res[i] = Math.sqrt(Re * Re + Im * Im);
+            res[i] = Math.sqrt(Re * Re + Im * Im) * 100;
         }
         
         return res;
